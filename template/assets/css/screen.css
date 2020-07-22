@@ -26,8 +26,11 @@ img {
     max-width:100%;
 }
 
+input {
+    border: 0;
+}
 
-/*===============================car==============================*/
+/*===============================720px-version==============================*/
 .car {
     border-width: 1px;
     border-color: rgb(245, 246, 249);
@@ -189,7 +192,7 @@ img {
     flex-direction: column;
 }
 
-.car-info__avlblty_minus {
+.info-block1__avlblty_minus {
     color: rgb(242, 140, 41);
     font-size: 8px;
     font-family: "Montserrat";
@@ -198,7 +201,7 @@ img {
     text-transform: uppercase;
 }
 
-.car-info__avlblty_plus {
+.info-block1__avlblty_plus {
     color: #5fa800;
     font-size: 8px;
     font-family: "Montserrat";
@@ -207,7 +210,7 @@ img {
     text-transform: uppercase;
 }
 
-.car-info__price {
+.info-block1__price {
     color: rgb(51, 51, 51);
     font-size: 12.5px;
     font-family: "Montserrat";
@@ -218,7 +221,7 @@ img {
     width: 98px;  
 }
 
-.car-info__price_sale {
+.info-block1__price_sale {
     color: rgb(119, 119, 119);
     font-size: 9.5px;
     font-family: "Montserrat";
@@ -229,7 +232,7 @@ img {
     width: 57.5px;
 }
 
-.car-info__bar {
+.info-block1__bar {
     align-items: center;
     border-width: 1px;
     border-color: rgb(240, 240, 241);
@@ -247,7 +250,7 @@ img {
     width: 137px;
 }
 
-.car-info__bar_availaible {
+.info-block1__bar_availaible {
     align-items: center;
     border-width: 1px;
     border-color: rgb(240, 240, 241);
@@ -265,42 +268,42 @@ img {
     width: 137px;
 }
 
-.car-info__bar-button1 {
+.info-block1__bar-button1 {
     padding-bottom: 4px;
     padding-left: 7px;
     text-decoration: none;
 }
 
-.car-info__bar-button1:hover {
+.info-block1__bar-button1:hover {
   filter: brightness(0.5);
 }
 
-.car-info__bar-item1 {
+.info-block1__bar-item1 {
     font-size: 18px;
     color: #8f8f8f;
 }
 
-.car-info__bar-button2 {
+.info-block1__bar-button2 {
     padding-right: 6px;
     text-decoration: none;
 }
 
-.car-info__bar-button2:hover {
+.info-block1__bar-button2:hover {
   filter: brightness(0.5);
 }
 
-.car-info__bar-item2 {
+.info-block1__bar-item2 {
     font-size: 18px;
     color: #8f8f8f;
 }
 
-.car-info__bar-amount {
+.info-block1__bar-amount {
     align-self: center;
     flex-grow: 1;
     text-align: center;
 }
 
-.car-info__buy-button {
+.info-block1__buy-button {
     border-radius: 2px;
     background-color: rgb(43, 125, 224);
     color: rgb(255, 255, 255);
@@ -313,28 +316,28 @@ img {
     width: 139px;
 }
 
-.car-info__buy-button input{
+.info-block1__buy-button input{
     border: 0;
 }
 
-.car-info__buy-button:hover {
+.info-block1__buy-button:hover {
     background-color: rgb(66, 137, 224);
 }
 
-.car-info__source {
+.info-block2__source {
     display: flex;
     flex-direction: row;
 }
 
-.car-info__source-item {
+.info-block2__source-item {
     padding-top: 11px;
 }
 
-.car-info__source-item:hover {
+.info-block2__source-item:hover {
     filter: brightness(0.4);
 }
 
-.car-info__source-text {
+.info-block2__source-text {
     color: rgb(119, 119, 119);
     font-size: 9px;
     font-family: "Montserrat";
@@ -343,7 +346,7 @@ img {
     width: 95px;
     height: 25px;
 }   
-/*------------------------------next-block-----------------------------------*/
+/*===============================480px-version==============================*/
 @media screen and (max-width: 480px) {
     .car {
         background-color: rgb(255, 255, 255);
@@ -351,14 +354,16 @@ img {
         height: 800px;
         width: 475px;
         flex-direction: column;
+        border: 0;
+        padding-bottom: 42px;
     }   
-
+/*------------------------------car-photo-----------------------------------*/
     .car-photo {
         padding: 36px 50px 0px 50px;   
     }
     
     .car-photo___availaible {
-        padding: 25px 25px 40px 24px;   
+        padding: 25px 0px 0px 50px;   
     }
     
     .car-photo__img {
@@ -366,6 +371,53 @@ img {
         height: 377px;      
     }
 
+    .car-photo__shield {  
+        flex-direction: row;
+    }     
+    
+    .car-photo__shield-item1 {
+        width: 57px;
+        height: 26px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    
+    .car-photo__shield-item1 span {
+        padding-top: 3px;
+    }
+    
+    .car-photo__shield-item2 {
+        width: 99px;
+        height: 26px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    
+    .car-photo__shield-item2 span {
+        padding-top: 3px;
+    }
+
+    .car-photo__shield-item3_1 {
+        width: 72px;
+        height: 26px;
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    
+    .car-photo__shield-item3_1 span {
+        padding-top: 3px;
+    }
+    
+    .car-photo__shield-item3_2 {
+        width: 38px;
+        height: 26px;
+        font-size: 12px;   
+    }
+    
+    .car-photo__shield-item3_2 span {
+        padding-top: 3px;
+    }
+/*------------------------------car-description-----------------------------------*/
     .car-description__name {
         font-size: 16px;
         height: 18px;
@@ -387,59 +439,72 @@ img {
     .car-description__techs-list {
         font-size: 13px;
     }
-    
-    .car-info__avlblty_minus {
+/*------------------------------car-info-----------------------------------*/
+    .car-info {
+        flex-direction: row;
+    }
+    info-block1 {
+        margin-right: 50px;
+    }
+
+    .info-block1__avlblty_minus {
         font-size: 11px;
         line-height: 1.364;
-        padding: 38px 0px 0px 50px;
+        padding: 35px 0px 2px 49px;
     }
     
-    .car-info__avlblty_plus {
+    .info-block1__avlblty_plus {
         font-size: 11px;
         line-height: 1.364;
-        padding: 38px 0px 0px 50px;
+        padding: 35px 0px 0px 49px;
     }
     
-    .car-info__price {
+    .info-block1__price {
         height: 19px;
         font-size: 17px;
         font-weight: bold;
         line-height: 0.882; 
-        padding: 20px 50px 0px 50px;    
+        padding: 15px 0px 0px 51px;    
         width: 133px;  
     }
     
-    .car-info__price_sale {
+    .info-block1__price_sale {
         font-size: 13px;
         height: 13.5px;
         line-height: 1.154;
-        padding: 13px 0px 0px 50px;
+        padding: 7px 0px 0px 50px;
         width: 79px;
     }
 
-    .car-info__bar {
+    .info-block1__bar {
         font-size: 13px;
         height: 33px;
-        margin: 20px 0px 0px 50px;
+        margin: 17px 0px 0px 50px;
         width: 191px
     }
     
-    .car-info__bar_availaible {
+    .info-block1__bar_availaible {
         font-size: 13px;
         height: 33px;
         margin: 20px 0px 0px 50px;
         width: 191px
     }
 
-    .car-info__buy-button {
+    .info-block1__buy-button {
         font-size: 12px;
         width: 193px;
         height: 37px;
         margin: 4px 0px 0px 50px;
     }
 
-    .car-info__source {
-        display: flex;
-        
+    .info-block2__source {
+        padding: 53px 0px 0px 88px;
+        width: 215px;
+        height: 15px;
     }
+    
+    .info-block2__source-text {
+        font-size: 12px;
+        line-height: 1.25;
+    }   
 }
