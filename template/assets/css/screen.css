@@ -41,27 +41,98 @@ img {
 /*------------------------------car-photo-----------------------------------*/
 .car-photo {
     padding: 27px 24px 40px 25px;   
+    position: relative; 
 }
 
 .car-photo___availaible {
-    padding: 25px 25px 40px 24px;   
+    padding: 25px 25px 40px 24px;  
+    position: relative; 
 }
 
 .car-photo__img {
     width: 116px;
-    height: 115px;      
+    height: 115px;     
 }
 
-.car-photo__item1 {
+.car-photo__shield {
+    display: flex;
+    position: absolute;   
+    flex-direction: column;
+}     
+
+.car-photo__shield-item1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: rgb(247, 211, 59);
+    width: 42px;
+    height: 19px;
+    font-size: 9px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 1.667;
+    margin-bottom: 2px;
 }
 
-.car-photo__item2 {
+.car-photo__shield-item1 span {
+    padding-top: 1px;
 }
 
-.car-photo__item3 {
+.car-photo__shield-item2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: #7558cd;
+    width: 75px;
+    height: 19px;
+    font-size: 9px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    margin-bottom: 2px;
 }
 
-.car-photo__item4 {
+.car-photo__shield-item2 span {
+    padding-top: 1px;
+}
+.car-photo__shield-item3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.car-photo__shield-item3_1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    background-color: rgb(98, 195, 75);
+    width: 55px;
+    height: 19px;
+    font-size: 9px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    margin-right: 2px;
+}
+
+.car-photo__shield-item3_1 span {
+    padding-top: 1px;
+}
+
+.car-photo__shield-item3_2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    width: 30px;
+    height: 19px;
+    font-size: 9px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+    background-color: #e74650;   
+}
+
+.car-photo__shield-item3_2 span {
+    padding-top: 1px;
 }
 /*------------------------------car-description-----------------------------------*/
 
